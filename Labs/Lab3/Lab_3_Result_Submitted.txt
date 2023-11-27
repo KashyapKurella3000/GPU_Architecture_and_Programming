@@ -1,0 +1,7 @@
+gpu_tot_ipc = 3.9415
+gpu_occupancy = 16.4675% 
+L1D_total_cache_miss_rate = 1.0000
+L2_total_cache_miss_rate = 0.3962
+gpgpu_simulation_time = 0 days, 0 hrs, 0 min, 1 sec (1 sec)
+gpgpu_simulation_rate = 5120 (inst/sec)
+gpgpu_simulation_rate = 1299 (cycle/sec)

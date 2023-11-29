@@ -1,0 +1,3 @@
+
+
+Array multiplication program which should be able to take arbitrary input matrix sizes and calculate the output matrix. All the matrices must be arrays stored in the memory (i.e., reserved with malloc). Input matrix values should be randomly generated integers.Also, measure the performance of your programs by getting their execution times (the higher precision the better). Your code should not produce any errors or warnings during compilation and Capable of handling input sizes of 2 * 2, 4 * 4, ..., 8192 * 8192.

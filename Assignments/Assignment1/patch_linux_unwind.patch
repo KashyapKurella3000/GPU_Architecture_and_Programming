@@ -1,0 +1,22 @@
+--- linux-unwind_old.h	2009-11-12 22:58:12.000000000 -0800
++++ linux-unwind.h	2021-09-05 01:48:31.638608900 -0700
+@@ -47,7 +47,7 @@
+   if (*(unsigned char *)(pc+0) == 0x48
+       && *(unsigned long *)(pc+1) == 0x050f0000000fc0c7)
+     {
+-      struct ucontext *uc_ = context->cfa;
++      ucontext_t *uc_ = context->cfa;
+       /* The void * cast is necessary to avoid an aliasing warning.
+          The aliasing warning is correct, but should not be a problem
+          because it does not alias anything.  */
+@@ -135,8 +135,8 @@
+ 	int sig;
+ 	struct siginfo *pinfo;
+ 	void *puc;
+-	struct siginfo info;
+-	struct ucontext uc;
++	siginfo_t info;
++	ucontext_t uc;
+       } *rt_ = context->cfa;
+       /* The void * cast is necessary to avoid an aliasing warning.
+          The aliasing warning is correct, but should not be a problem
